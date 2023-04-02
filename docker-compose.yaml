@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+    php:
+        container_name: php_sandbox
+        build: docker/php
+        volumes:
+            - .:/app
+        working_dir: /app
+
+    redis:
+        container_name: redis_sandbox
+        image: redis/redis-stack
+        ports:
+            - '6379:6379'
+            - '8001:8001'
