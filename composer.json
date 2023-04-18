@@ -2,7 +2,7 @@
     "name": "vitasmice/redis-graph-sandbox",
     "autoload": {
         "psr-4": {
-            "Vitasmice\\RedisGraphSandbox\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
@@ -11,5 +11,7 @@
             "email": "vitas.m1998@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "symfony/console": "^6.2"
+    }
 }
